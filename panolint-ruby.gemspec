@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "panolint-ruby"
-  spec.version       = "0.0.1.unversioned"
+  spec.version       = "0.0.0.unversioned"
   spec.authors       = ["Amy Lieberman"]
   spec.email         = ["alieberman@panoramaed.com"]
 
@@ -17,7 +17,9 @@ Gem::Specification.new do |spec|
     `git ls-files -z`.split("\x0")
   end
 
-  spec.add_dependency "rubocop", ">= 0.83", "< 2.0"
-  spec.add_dependency "rubocop-performance", "~> 1.5"
-  spec.add_dependency "rubocop-rspec", "~> 2.0"
+  # Pinned to latest versions and will be updated by Dependabot
+  # so that code bases using panolint-ruby will get the latest versions
+  spec.add_dependency "rubocop", "1.50.0"
+  spec.add_dependency "rubocop-performance", "1.17.1"
+  spec.add_dependency "rubocop-rspec", "2.19.0"
 end

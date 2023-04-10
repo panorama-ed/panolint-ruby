@@ -1,38 +1,33 @@
 # panolint-ruby
 
 [![Build Status](https://github.com/panorama-ed/panolint-ruby/workflows/Main/badge.svg)](https://github.com/panorama-ed/panolint-ruby/actions)
-[![Gem Version](https://img.shields.io/gem/v/panolint-ruby.svg)](https://github.com/panorama-ed/panolint-ruby)
 
-A small gem containing rules for linting Ruby code at Panorama Education.
+A small gem containing RuboCop linting rules for Panorama Education code.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-```ruby
-gem 'panolint-ruby'
+```
+gem "panolint-ruby", git: "https://github.com/panorama-ed/panolint-ruby.git", branch: "main"
 ```
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install panolint-ruby
+**Do not install this gem from RubyGems**, as updates are only pushed to this repo. We have only pushed an initial version to RubyGems to avoid supply chain attacks from malicious squatters.
 
 ## Usage
 
-### `rubocop`
-
-You can use `panolint-ruby`'s rubocop configuration in your project with the following addition to the top of your project's `.rubocop.yml`:
+You can use `panolint-ruby`'s RuboCop configuration in your project with the following addition to the top of your project's `.rubocop.yml`:
 
 ```
 inherit_gem:
   panolint-ruby: panolint-ruby-rubocop.yml
 ```
 
-Note that it for this gem in particular in needs to not be a `.rubocop.yml` file because of rubocop's [path relativity](https://github.com/rubocop-hq/rubocop/blob/master/manual/configuration.md#path-relativity).
+This gem uses a gem-specific named file instead of the traditional `.rubocop.yml` due to a [previous issue](https://github.com/rubocop/rubocop/issues/4154#issuecomment-316004878) with RuboCop extensions in VS Code [reading the wrong repository's `.rubocop.yml` file](https://github.com/panorama-ed/panolint/pull/95).
 
 ## Contributing
 
