@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "panolint-ruby"
-  spec.version       = "0.0.0.unversioned"
+  spec.version       = "0"
   spec.authors       = ["Amy Lieberman"]
   spec.email         = ["alieberman@panoramaed.com"]
 
