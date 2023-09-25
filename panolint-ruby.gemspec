@@ -21,5 +21,5 @@ Gem::Specification.new do |spec|
   # so that code bases using panolint-ruby will get the latest versions
   spec.add_dependency "rubocop", "1.56.3"
   spec.add_dependency "rubocop-performance", "1.19.1"
-  spec.add_dependency "rubocop-rspec", "2.24.0"
+  spec.add_dependency "rubocop-rspec", "2.24.1"
 end
