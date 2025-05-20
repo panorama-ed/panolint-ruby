@@ -74,6 +74,10 @@ Metrics/PerceivedComplexity:
 Naming/BinaryOperatorParameterName:
   Enabled: false
 
+# CodeQL cannot parse anonymous block parameters
+Naming/BlockForwarding:
+  EnforcedStyle: explicit
+
 Naming/FileName:
   Exclude:
     - .overcommit/Gemfile
@@ -105,6 +109,10 @@ RSpec/NestedGroups:
 Style/Alias:
   Enabled: true
   EnforcedStyle: prefer_alias_method
+
+# CodeQL cannot parse anonymous block parameters
+Style/ArgumentsForwarding:
+  UseAnonymousForwarding: false
 
 Style/ArrayCoercion:
   Enabled: true
