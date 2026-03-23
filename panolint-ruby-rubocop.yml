@@ -28,7 +28,7 @@ Layout/LineContinuationSpacing:
 
 Layout/LineLength:
   Max: 80
-  IgnoreCopDirectives: true
+  AllowCopDirectives: true
 
 Lint/AmbiguousBlockAssociation:
   Exclude:
