@@ -139,7 +139,7 @@ Style/HashAsLastArrayItem:
   Enabled: true
 
 Style/HashSyntax:
-  EnforcedShorthandSyntax: either
+  EnforcedShorthandSyntax: always
 
 Style/MixinUsage:
   Exclude:
